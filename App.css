@@ -1,0 +1,80 @@
+.border {
+  border: 8px transparent; 
+  border-radius: 5px; 
+  padding: 89px; 
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 2%;
+  position: relative;
+  overflow: hidden;
+}
+
+.border::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border: 25px solid red;
+  animation: borderAnimation 5s;
+  filter: blur(6px);
+}
+
+@keyframes borderAnimation {
+  0% {width: 0;}
+  100% {width: 100%;}
+}
+.date{
+  margin-bottom: 35px;
+}
+.head{
+  height: 90px;
+  margin-right: 80px;
+  font-style: oblique;
+}
+
+p{
+  margin-right: 80px;
+  color: burlywood;
+}
+.list{
+  margin-right: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.delete{
+  margin-left: 80px;
+  background-color: red;
+}
+.span{
+  background-color: red;
+  cursor: pointer; 
+}
+.forms .span:hover {
+  background-color: #45a049; 
+}
+
+.forms input[type="text"] {
+  width: 60%; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  margin-right: 10px; 
+
+}
+.forms ::placeholder{
+  color: aliceblue;
+}
+.forms .button {
+  padding: 9px 16px; 
+  background-color: red; 
+  border: none;
+  border-radius: 5px; 
+  color: wheat; 
+  cursor: pointer; 
+}
+
+.forms .button:hover {
+  background-color: #45a049; 
+}

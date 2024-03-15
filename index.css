@@ -1,0 +1,7 @@
+*{
+  margin:0;
+  padding: 5px;
+  background-color: rgb(104, 132, 224);
+ box-sizing: border-box;
+ filter: blur();
+} 
